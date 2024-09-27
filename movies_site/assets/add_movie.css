@@ -1,6 +1,6 @@
 /* General form styles */
 .auth-container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 60px auto;
     padding: 40px;
     background-color: #fff;
@@ -9,8 +9,8 @@
 }
 
 .auth-container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     color: #333;
     font-weight: bold;
     text-align: center;
@@ -34,13 +34,12 @@
 .auth-form input[type="password"],
 .auth-form input[type="date"],
 .auth-form textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    padding: 8px 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     font-size: 1rem;
     width: 100%;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Textarea for description */
@@ -53,19 +52,19 @@
 .auth-form input[type="password"]:focus,
 .auth-form input[type="date"]:focus,
 .auth-form textarea:focus {
-    border-color: #4A90E2;
+    border-color: #ff2b2b;
     box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
     outline: none;
 }
 
 /* Submit button */
 .btn-add-movie {
-    background-color: #4A90E2;
+    background-color: #ff2b2b;
     color: white;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 8px 8px;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     width: 100%;
     max-width: 150px;
@@ -83,11 +82,11 @@
 }
 
 .btn-add-movie:hover {
-    background-color: #357ABD;
+    background-color: #ff2b2b;
 }
 
 .btn-add-movie:active {
-    background-color: #2a5f92;
+    background-color: #ff2b2b;
 }
 
 /* Responsive adjustments */

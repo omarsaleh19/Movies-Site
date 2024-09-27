@@ -53,7 +53,7 @@
 .btn-login {
     background-color: #ff2b2b;
     color: white;
-    padding: 8px 8px;
+    padding: 10px 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
@@ -65,11 +65,24 @@
 }
 
 .btn-login:hover {
-    background-color: #ff2b2b;
+    background-color: #e62020;
 }
 
 .btn-login:active {
-    background-color: #2a5f92;
+    background-color: #cc1f1f;
+}
+
+.auth-form a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    display: inline-block; /* Ensures space between the input fields and the link */
+    transition: color 0.3s ease;
+}
+
+.auth-form a:hover {
+    color: #e62020;
+    text-decoration: underline;
 }
 
 /* Responsive adjustments */

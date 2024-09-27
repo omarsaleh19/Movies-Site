@@ -14,6 +14,7 @@
         {% if request.GET.next %}
             <input type="hidden" name="next" value="{{ request.GET.next }}">
         {% endif %}
+        <p>Don't have an account yet? <a href="{% url 'accounts:signup' %}?next={{ request.GET.next }}">Create Account</a></p>
         <input type="submit" value="Login" class="btn-login">
     </form>
 </div>
