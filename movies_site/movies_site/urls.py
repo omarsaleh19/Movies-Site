@@ -7,10 +7,10 @@ from movies import views as movie_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movies/', include('movies.urls')),  # Routes all requests starting with movies/ to the movies app
-    path('accounts/', include('accounts.urls')),  # Routes all account-related URLs
-    path('', movie_views.movie_list, name="home"),  # Root URL shows the movie list as the homepage
+    path('movies/', include('movies.urls')), 
+    path('accounts/', include('accounts.urls')),  
+    path('', movie_views.movie_list, name="home"),  
 ]
 
-urlpatterns += staticfiles_urlpatterns()  # Serves static files during development
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # Serves media files during development
+urlpatterns += staticfiles_urlpatterns() 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 

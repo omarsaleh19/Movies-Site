@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from .models import Movie, Review
-from .forms import ReviewForm
+from .forms import ReviewForm, AddMovie
 from django.contrib.auth.decorators import login_required
 
 def movie_list(request):
@@ -33,3 +33,18 @@ def movie_detail(request, slug):
         'reviews': reviews,
         'form': form,
     })
+
+
+@login_required(login_url="/accounts/login/")
+def movie_add(request):
+    if request.method == 'POST':
+        form = AddMovie(request.POST, request.FILES)
+        if form.is_valid():  # Fixed typo here
+            instance = form.save(commit=False)
+            instance.author = request.user 
+            instance.save()  # Save the movie to the database
+            return redirect('movie:list')  # Redirect to the movie list
+    else:
+        form = AddMovie()
+    
+    return render(request, "movies/movie_add.html", {'form': form})

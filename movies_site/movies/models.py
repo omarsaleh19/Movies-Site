@@ -6,8 +6,8 @@ class Movie(models.Model):
     slug = models.SlugField()
     description = models.TextField()
     director = models.CharField(max_length=100)
-    release_date = models.DateField()
-    poster = models.ImageField(upload_to='posters/')
+    release_date = models.DateField(help_text="YYYY-MM-DD")
+    poster = models.ImageField(upload_to='posters/', blank=True)
     actors = models.TextField(help_text="Comma-separated list of main actors")
     
     def __str__(self):
