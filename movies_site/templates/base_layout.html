@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     {% load static %}
-    <title>{% block title %}My Movie Website{% endblock %}</title>
+    <title>Moviescape</title>
     <link rel="icon" type="image/x-icon" href="{% static 'icon.png' %}">
     <link rel="stylesheet" href="{% static 'styles.css' %}">  <!-- Link your CSS here -->
     
@@ -15,7 +15,8 @@
 
     <header>
         <div class="header-container">
-            <h1 class="logo">My Movie Website</h1>
+            <h1 class="logo">Moviescape</h1>
+            <p class="tagline">Exploring the landscape of movies.</p>
             <nav class="navbar">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="{% url 'movie:list' %}" class="nav-link">Home</a></li>
