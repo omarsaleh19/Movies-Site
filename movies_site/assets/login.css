@@ -44,14 +44,14 @@
 
 .auth-form input[type="text"]:focus,
 .auth-form input[type="password"]:focus {
-    border-color: #4A90E2;
+    border-color: #ff2b2b;
     box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
     outline: none;
 }
 
 /* Login button */
 .btn-login {
-    background-color: #4A90E2;
+    background-color: #ff2b2b;
     color: white;
     padding: 8px 8px;
     font-size: 1.2rem;
@@ -65,7 +65,7 @@
 }
 
 .btn-login:hover {
-    background-color: #357ABD;
+    background-color: #ff2b2b;
 }
 
 .btn-login:active {

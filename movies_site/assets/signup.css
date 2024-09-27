@@ -39,7 +39,7 @@
     box-sizing: border-box;
 }
 .auth-form input:focus {
-    border-color: #4A90E2;
+    border-color: #ff2b2b;
     box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
     outline: none;
 }
@@ -53,7 +53,7 @@
 
 /* Button styling */
 .btn-signup {
-    background-color: #4A90E2;
+    background-color: #ff2b2b;
     color: white;
     padding: 12px;
     font-size: 1.2rem;
@@ -66,11 +66,11 @@
 }
 
 .btn-signup:hover {
-    background-color: #357ABD;
+    background-color: #ff2b2b;
 }
 
 .btn-signup:active {
-    background-color: #2a5f92;
+    background-color: #ff2b2b;
 }
 
 /* Responsive adjustments */
