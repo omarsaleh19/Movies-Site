@@ -13,7 +13,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/omarsaleh19/Movies-Site
-   cd movies-site
+   cd Movies-Site
    ```
 
 2. **Create a virtual environment**
@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
 
 4. **Install required packages**
    ```bash
-   pip install -r requirements.txt
+   pip install -r movies_site/requirements.txt
    ```
 
 5. **Run the development server**
