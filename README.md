@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed:
 
 5. **Run the development server**
    ```bash
-   python manage.py runserver
+   python movies_site/manage.py runserver
    ```
 
 6. **Access the website**
