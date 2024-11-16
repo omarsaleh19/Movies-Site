@@ -1,5 +1,5 @@
 FROM python:3.11-slim
-WORKDIR /movies_site/
+WORKDIR /app
 COPY requirements.txt .
 RUN apt-get update
 RUN apt-get install gcc default-libmysqlclient-dev -y
