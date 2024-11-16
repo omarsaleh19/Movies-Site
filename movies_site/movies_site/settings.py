@@ -78,11 +78,17 @@ WSGI_APPLICATION = 'movies_site.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'new_db.sqlite3',  # New database file for your new project
+    "default": {
+        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("SQL_DATABASE", os.path.join(BASE_DIR, 'db.sqlite3')),
+        "USER": os.environ.get("SQL_USER", "myuser"),
+        "PASSWORD": os.environ.get("SQL_PASSWORD", "myuserpassword"),
+        "HOST": os.environ.get("SQL_HOST", "localhost"),
+        "PORT": os.environ.get("SQL_PORT", "3306"), 
     }
 }
+
+print(DATABASES)
 
 
 
